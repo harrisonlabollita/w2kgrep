@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+w2kgrep/__init__.py
+w2kgrep/w2kgrep.py
+w2kgrep.egg-info/PKG-INFO
+w2kgrep.egg-info/SOURCES.txt
+w2kgrep.egg-info/dependency_links.txt
+w2kgrep.egg-info/entry_points.txt
+w2kgrep.egg-info/top_level.txt
