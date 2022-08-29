@@ -1,3 +1,0 @@
-[console_scripts]
-w2kgrep = w2kgrep.w2kgrep:main
-
