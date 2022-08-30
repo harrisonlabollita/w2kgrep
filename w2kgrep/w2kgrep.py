@@ -12,9 +12,9 @@ def command_filter(args):
             filtered.append(":FER")
         elif arg in [":MMI", "MMI", "mm", "mom", "MOM", "MM", "magmoment", "moment"]:
             try:
-                atom = int(args[i+1])
-                atom = "00"+str(atom) if atom < 10 else "0"+str(atom)
-                filtered.append(":MMI"+atom)
+                atom = int(args[i + 1])
+                atom = "00" + str(atom) if atom < 10 else "0" + str(atom)
+                filtered.append(":MMI" + atom)
             except Exception:
                 filtered.append(":MMI")
         else:
@@ -37,9 +37,9 @@ class GREP(object):
         for search in self.searches:
             new_grep = [line for line in lines if search in line]
             if "-last" in self.options or "--last" in self.options:
-                print(new_grep[-1],end="")
+                print(new_grep[-1], end="")
             elif "-first" in self.options or "--first" in self.options:
-                print(new_grep[0],end="")
+                print(new_grep[0], end="")
             else:
                 for find in new_grep:
                     print(find, end="")
