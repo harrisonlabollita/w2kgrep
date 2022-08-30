@@ -37,9 +37,9 @@ class GREP(object):
         for search in self.searches:
             new_grep = [line for line in lines if search in line]
             if "-last" in self.options or "--last" in self.options:
-                print(new_grep[-1])
+                print(new_grep[-1],end="")
             elif "-first" in self.options or "--first" in self.options:
-                print(new_grep[0])
+                print(new_grep[0],end="")
             else:
                 for find in new_grep:
                     print(find, end="")
